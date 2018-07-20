@@ -26,12 +26,11 @@ def find_the_cheese(foods)
 
 
   cheese_types.each do |cheese|
-    foods.each do |food|
-      if cheese.strip == food.strip
-        return food
-      else
-        return nil
-      end
-    end
+    if foods.include?(cheese)
+      return cheese
+    else
+      return nil
+    end 
+    
   end
 end
