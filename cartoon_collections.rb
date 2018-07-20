@@ -27,7 +27,7 @@ def find_the_cheese(foods)
 
   cheese_types.each do |cheese|
     foods.each do |food|
-      if cheese == food
+      if cheese.strip == food.strip
         return food
       else
         return nil
