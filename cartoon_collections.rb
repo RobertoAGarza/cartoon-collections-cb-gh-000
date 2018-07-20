@@ -31,6 +31,5 @@ def find_the_cheese(foods)
     else
       return nil
     end
-
   end
 end
